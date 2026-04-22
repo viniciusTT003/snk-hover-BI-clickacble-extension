@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "VCompactBar - Click to Open",
+  "version": "1.0",
+  "description": "Converte o VCompactBar de hover para click, melhorando a UX.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}
